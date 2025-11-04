@@ -9,5 +9,6 @@ public class Ascend {
     double Tempmin = Math.min(a, Math.min(b, c));
     double Tempmax = Math.max(a, Math.max(b, c));
     double Tempmid = a + b + c - Tempmin - Tempmax;
+    System.out.println(Tempmin, Tempmid, Tempmax);
 	}
 }
