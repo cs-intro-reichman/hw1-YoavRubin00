@@ -6,9 +6,12 @@ public class TimeFormat {
         int minutes = Integer.parseInt(args[0]);
          if (hours > 12) {
             int newhours = hours - 12;
-            System.out.printf("The time is: %d:%02d PM\n", newhours, minutes);
+            if(newhours == 0){
+                System.out.printf("The time is: 00:%d PM", minutes);
+            }
+            System.out.printf("The time is: %d:%d PM", newhours, minutes);
         } else {
-            System.out.printf("The time is: %d:%02d AM\n", hours, minutes);
+            System.out.printf("The time is: %d:%d AM", hours, minutes);
          }
     }
 }

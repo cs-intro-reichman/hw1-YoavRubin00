@@ -6,7 +6,7 @@ public class NumWords {
         int hundreds = number / 100;
         int tens = (number / 10) % 10;
         int units = number % 10;
-        System.out.printf(": %d,hundreds, %d,tens, %d, ones", hundreds, tens, units);
+        System.out.printf("%d hundreds, %d tens, %d ones", hundreds, tens, units);
 
     }
 }
